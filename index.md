@@ -1,5 +1,5 @@
 ## Welcome to Jangho Park's portfolio page
-This page contains information on some projects that I've worked on. 
+This page contains information on some projects that I've worked on. I like to use C++ and C# as main languages. Plus, I love to use Visual Studio to build something. 
 
 ### Image-based Car Scratch Retrieval System
 
@@ -58,6 +58,5 @@ This project aims to build a very simple rendering engine for future use, such a
 
 <img src="images/uwp2.png" alt="hi" class="inline"/>
 <p style="text-align:center;"> It is drawing same 3D objects on different platform (Windows 10 Phone) </p>
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ## If you want to know more about my projects, feel free to contact me anytime
