@@ -3,13 +3,15 @@ This page contains information on some projects that I've worked on.
 
 ### Image-based Car Scratch Retrieval System
 
-     As a research assistant at Seoul National University, I built a car scratch detector. In order to do so, I developed the method to effectively separate a car body from its background (image segmentation). This is needed to minimize the search area to find scratch. For example, as you can see from the figure 1 below (center image), only the white area (car body) is considered when finding a scratch area (red dots). Based on my observation that scratch area is made up of Harris Corner-like points, I made the program to first capture scratch points (red dots) using Harris Corner Detector algorithm, then useful properties (features), including the number of red dots, skewness of points, are extracted from these points. In other words, every given image is represented as a feature vector. 
+As a research assistant at Seoul National University, I built a car scratch detector. In order to do so, I developed the method to effectively separate a car body from its background (image segmentation). This is needed to minimize the search area to find scratch. For example, as you can see from the figure 1 below (center image), only the white area (car body) is considered when finding a scratch area (red dots). Based on my observation that scratch area is made up of Harris Corner-like points, I made the program to first capture scratch points (red dots) using Harris Corner Detector algorithm, then useful properties (features), including the number of red dots, skewness of points, are extracted from these points. In other words, every given image is represented as a feature vector. 
 
+<img src="images/image_retrieval_image1.png" alt="hi" class="inline"/>
 Figure 1 Extract useful features of scratch
 
+<img src="images/image_retrieval_image2.png" alt="hi" class="inline"/>
 Figure 2 Image Retrieval Process
 
-     Given a set of car images, scratch patterns are extracted from the given images and these are used to construct a database (Figure 2). Then, a query image is also represented as feature vector, and the program calculates the feature distances from the query image feature vector and all feature vector from the database. Finally, as you can see the rightmost image of Figure 2, the program retrieves similar car scratch patterns using nearest neighbor algorithm and distance thresholding.
+Given a set of car images, scratch patterns are extracted from the given images and these are used to construct a database (Figure 2). Then, a query image is also represented as feature vector, and the program calculates the feature distances from the query image feature vector and all feature vector from the database. Finally, as you can see the rightmost image of Figure 2, the program retrieves similar car scratch patterns using nearest neighbor algorithm and distance thresholding.
 
 
 ### Markdown
