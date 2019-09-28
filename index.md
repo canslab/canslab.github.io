@@ -1,10 +1,3 @@
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 ## Welcome to Jangho Park's portfolio page
 This page contains information on some projects that I've worked on. 
 
