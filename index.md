@@ -13,6 +13,9 @@ Figure 2 Image Retrieval Process
 
 Given a set of car images, scratch patterns are extracted from the given images and these are used to construct a database (Figure 2). Then, a query image is also represented as feature vector, and the program calculates the feature distances from the query image feature vector and all feature vector from the database. Finally, as you can see the rightmost image of Figure 2, the program retrieves similar car scratch patterns using nearest neighbor algorithm and distance thresholding.
 
+In order to run this program, do not clone 'master' branch. Clone 'NovelSegmentation' branch instead.
+[Github link]<https://github.com/canslab/CarScratchDetector>
+
 
 ### Markdown
 
