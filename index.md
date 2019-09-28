@@ -17,35 +17,47 @@ In order to run this program, do not clone 'master' branch. Clone 'NovelSegmenta
 
 [Github link]<https://github.com/canslab/CarScratchDetector>
 
+### Remote-controlled Probe (B.S. Graduation Project)
 
-### Markdown
+This project aims to build the remote-localized mobile robot that a user can order various tasks to the robot. I built the whole robot, including the head (camera part) of the robot. The main computing board was the Raspberry Pi 2 board. Two DC motors and two servo motors were powered by the PWM motor controller board. Power supply was a 20000 mAh external battery manufactured by Xioami.
+
+I developed the PC-side software to enable a user to control the robot and monitor its surrounding using the attached camera, based on information transmitted via an Internet connection. Using a meanshift-based object-tracking algorithm, I enabled the robot to track a specific object and rotate its camera to automatically follow the tracked object. Also, the server program (robot-side software) runs on the Raspberry Pi 2 board, which was for handling commands come from the PC-side software and transmitting real-time video to it. The user can send commands in JSON format and these packets were dealt with by the server program. PC-side software was developed in C#, and the server-side software was built in Python.
+
+<img src="images/robot1.jpg" alt="hi" class="inline"/>
+<p style="text-align:center;"> Robot </p>
+<img src="images/robot2.jpg" alt="hi" class="inline"/>
+<p style="text-align:center;"> Robot </p>
+<img src="images/robot3.png" alt="hi" class="inline"/>
+<p style="text-align:center;"> Client software</p>
+
+### Fabric Texture Recognizer
+
+This project aims to make a classifier that automatically label an unknown fabric texture image based on a set of previously known fabric texture images. This project makes the best use of an important attribute: every fabric texture has its own periodicity, which was one of the main reasons I used Fourier analysis to interpret images. 
+
+<img src="images/fabric1.png" alt="hi" class="inline"/>
+<p style="text-align:center;"> An example of how this works </p>
+
+Using a k-means clustering algorithm, I trained a classifier from a set of input texture images and determine labels of unclassified texture patterns using the learning model. The 2-D Fourier transform was used to extract frequency information from input fabric texture images. The frequency information was used to train the model. After building the model, the software used an input unknown fabric texture to calculate vector distances between the input image and every cluster. Then, the label of an input image is decided to be the index number of the cluster which is closest to the input image.
+
+### Meanshift-based Object Tracker
+This project aims to track a user-designated object (image). I developed the tracker using a mean-shift algorithm (kernel-based tracking). This tracker mainly used the hue value of the target object (image) to follow the object. Also, I implemented it using parallel programming in order to overcome the disadvantages of a meanshift-based tracker. A number of mean-shift procedure runs in parallel. Then each result of procedures is compared to the target image in probabilistic ways. 
+
+This is made into a form of library (module) for the future use. This project was the core tracking library of the ‘Remote-controlled Probe’ project.
+
+<img src="images/mean1.png" alt="hi" class="inline"/>
+<p style="text-align:center;"> The program is tracking a heart-shaped paper </p>
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Simple Rendering Engine for Universal Windows Platform
 
-# Header 1
-## Header 2
-### Header 3
+This project aims to build a very simple rendering engine for future use, such as 3D game projects. This program can be used on various Windows 10 platforms, including Windows 10 Mobile and Windows 10 PC. Direct X 11, Universal Windows Platform framework and Visual Studio (C++) were used to develop this engine. In particular, this program was built from scratch, which means no other third-party libraries were used. The engine can read object model files (.obj) and render them.
 
-- Bulleted
-- List
+<img src="images/uwp1.png" alt="hi" class="inline"/>
+<p style="text-align:center;"> It is drawing several 3D objects on Windows 10 PC </p>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
+<img src="images/uwp2.png" alt="hi" class="inline"/>
+<p style="text-align:center;"> It is drawing same 3D objects on different platform (Windows 10 Phone) </p>
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/canslab/canslab.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## If you want to know more about my projects, feel free to contact me anytime
