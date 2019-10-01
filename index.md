@@ -76,3 +76,4 @@ This project aims to build a very simple rendering engine for future use, such a
 <p style="text-align:center;"> It is drawing same 3D objects on different platform (Windows 10 Phone) </p>
 
 ## If you want to know more about my projects, feel free to contact me anytime
+Email: jangho.park@columbia.edu, devjh1106@gmail.com
